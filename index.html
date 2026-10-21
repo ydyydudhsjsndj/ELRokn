@@ -1,1 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12110F">
+  <meta name="description" content="اكتشف نكهات الركن الدمشقي — Damascene Corner.">
+  <title>الركن الدمشقي | Damascene Corner</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="intro" id="intro" aria-label="Damascene Corner intro">
+    <div class="intro-image" role="img" aria-label="مجموعة أطباق شامية"></div>
+    <div class="intro-shade"></div>
+    <div class="intro-content">
+      <div class="brand-mark" aria-hidden="true">ر</div>
+      <p class="eyebrow">DAMASCENE CORNER</p>
+      <h1 data-i18n="introTitle">حكاية طعم من الشام</h1>
+      <p class="intro-subtitle" data-i18n="introSubtitle">أصالة المذاق.. في كل تفصيلة</p>
+      <div class="loading-track"><span></span></div>
+      <p class="loading-copy" data-i18n="loading">نحضّر لك تجربة مميزة...</p>
+      <button class="skip-intro" id="skipIntro" data-i18n="skip">تخطّي المقدمة</button>
+    </div>
+  </div>
 
+  <div class="site-shell" id="siteShell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Damascene Corner home">
+        <span class="brand-mark small" aria-hidden="true">ر</span>
+        <span class="brand-words"><strong data-i18n="brandAr">الركن الدمشقي</strong><small>Damascene Corner</small></span>
+      </a>
+      <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch language">English <span>↗</span></button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow gold" data-i18n="heroEyebrow">نكهات شامية أصيلة</p>
+          <h1 data-i18n="heroTitle">أهلاً بيك في<br><em>الركن الدمشقي</em></h1>
+          <p class="hero-description" data-i18n="heroDescription">من قلب الشام، جمعنالك مذاقات أصيلة ومكونات مختارة بعناية.</p>
+          <a class="primary-button" href="#menu"><span data-i18n="explore">اكتشف المنيو</span><span aria-hidden="true">↙</span></a>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo" role="img" aria-label="مشاوي شامية"></div>
+          <div class="photo-note"><span class="note-star">✳</span><span data-i18n="photoNote">طعم يجمعنا</span></div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">شام</div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow red" data-i18n="menuEyebrow">من مطبخنا إليك</p>
+            <h2 data-i18n="menuTitle">اختار اللي على مزاجك</h2>
+            <p class="section-description" data-i18n="menuDescription">أطباق مختارة، ونكهات تحكي حكاية الشام.</p>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="دوّر على أكلة..." autocomplete="off">
+          </label>
+        </div>
+
+        <nav class="category-nav" id="categoryNav" aria-label="Menu categories"></nav>
+        <div class="menu-meta"><span id="resultsCount"></span><span class="demo-tag" data-i18n="demoTag">منيو تجريبية</span></div>
+        <div class="food-grid" id="foodGrid"></div>
+        <p class="empty-state" id="emptyState" hidden data-i18n="empty">ملقيناش أصناف مطابقة. جرّب كلمة تانية.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand"><span class="brand-mark small">ر</span><span>Damascene Corner</span></div>
+      <p data-i18n="footerLine">من الشام.. بكل محبة</p>
+      <span class="footer-rule"></span>
+      <small>© <span id="year"></span> Damascene Corner</small>
+    </footer>
+  </div>
+</body>
+</html>
